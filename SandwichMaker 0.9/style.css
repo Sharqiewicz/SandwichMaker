@@ -78,6 +78,7 @@ form input[type="button"] {
 
 #sandwich-container {
   width: 50%;
+  max-height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

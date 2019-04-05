@@ -63,11 +63,13 @@ form input[type="button"]{
 
 #sandwich-container{
   width: 50%;
+  max-height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
+
 }
 #lastel{
   width: 0;

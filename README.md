@@ -46,9 +46,9 @@ What to do
 
 ```
 
-### Bugs
+### Update 1.0
 ```
 
-Application works on Opera, but on other browsers is broken
+Bugs fixed - App works in all browsers
 
 ```
