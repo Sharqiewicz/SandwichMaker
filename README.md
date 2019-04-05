@@ -49,6 +49,6 @@ What to do
 ### Bugs
 ```
 
-Application works on Opera, but on other browsers breaks
+Application works on Opera, but on other browsers is broken
 
 ```
