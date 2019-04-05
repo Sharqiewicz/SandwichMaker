@@ -15,3 +15,16 @@ Added simple js code which add or remove cheese into/from our sandwich
 }
 
 ```
+
+### Update 
+
+```
+
+Now you can add more than one slice of cheese!
+Also you can remove that many element if you want.
+Added a description of everything in script.js
+
+BUGS
+- if you adding slices to fast animation will stop working 
+
+```
