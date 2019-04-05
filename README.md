@@ -50,5 +50,6 @@ What to do
 ```
 
 Bugs fixed - App works in all browsers
+Animation bug fixed
 
 ```
