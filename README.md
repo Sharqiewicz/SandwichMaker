@@ -28,3 +28,20 @@ BUGS
 - if you adding slices to fast animation will stop working 
 
 ```
+
+### Update 0.9v
+
+![SandwichMaker APP](images/nice.png)
+
+
+```
+
+Now you can choose from 4 ingridients - cheese - meat - salad - tomato
+Scrollbar changed
+Oriental Sandwich v0.7
+
+What to do
+- Fix descriptions in script.js
+- Add Oriental Sandwich
+
+```
