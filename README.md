@@ -45,3 +45,10 @@ What to do
 - Add Oriental Sandwich
 
 ```
+
+### Bugs
+```
+
+Application works on Opera, but on other browsers breaks
+
+```
