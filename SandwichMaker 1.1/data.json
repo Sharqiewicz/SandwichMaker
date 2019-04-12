@@ -1,0 +1,17 @@
+{
+  "sandwiches": [
+    {
+      "coutry": "France",
+      "igredients": ["cheese","salad","cheese","meat","cheese","salad","cheese"]
+    },
+    {
+      "coutry": "United States",
+      "igredients": ["meat","meat","meat","meat","meat","meat","meat"]
+    },
+    {
+      "coutry": "Poland",
+      "igredients": ["tomato","salad","tomato","salad","tomato","salad","tomato"]
+    }
+
+  ]
+}

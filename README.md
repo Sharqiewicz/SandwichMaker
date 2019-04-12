@@ -53,3 +53,9 @@ Bugs fixed - App works in all browsers
 Animation bug fixed
 
 ```
+
+### Update 1.1
+```
+	Code optimized
+	Not support for IE
+```
