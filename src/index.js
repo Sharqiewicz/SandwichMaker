@@ -1,34 +1,33 @@
 //Sandwich elements
 
-let father = document.getElementById('sandwich-container');
+var father = document.getElementById('sandwich-container');
 // element before which ingredients will appear
-let lastel = document.querySelector('#lastel');
+var lastel = document.querySelector('#lastel');
 
-let animIsWorking = false;
+var animIsWorking = false;
 
 //Add buttons
 // ingredientToggle(OBJECT)
-document.querySelectorAll('input[data-ingredient]').forEach(el => {console.log(el); el.addEventListener("click", function(){ingredientToggle(el.dataset)})});
+document.querySelectorAll('input[data-ingredient]').forEach(el => { el.addEventListener("click", function(){ingredientToggle(el.dataset)})});
 
-// number of cheeses
-var cheeses = [];
+// Array of ingredients elements
+ingredientsArr = [];
 
-// number of meats
-var meats = [];
-
-// number of salads
-var salads = [];
-
-// number of tomatoes
-var tomatoes = [];
+function ingredientToggle({ ingredient, type }={}){
 
 
-function ingredientToggle({ingredient,type }={}){
     if(type === "add"){
-        console.log( 'Dodaje ' + ingredient);
+        if(!animIsWorking){
+            animIsWorking = true;
+            ingredientsArr.push(ingredient);
+            console.log(ingredientsArr);
+            animIsWorking = false;
+        }
     }
     else{
-        console.log('Odejmuje ' + ingredient);
+        let tmp = ingredientsArr.lastIndexOf(`${ingredient}`);
+        ingredientsArr = ingredientsArr.filter( (ingr, index) => index !== tmp);
+        console.log(ingredientsArr);
     }
 }
 
