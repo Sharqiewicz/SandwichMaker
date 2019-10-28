@@ -28,29 +28,29 @@
     <h1> Here you can order your imaginary sandwich: </h1>
     <div class="panel panel-info mt-3">
         <form class="col-12">
-            <input type="button" value="-" class="btn btn-default btn-danger " id="cheeseRemover">
+            <input type="button" value="-" class="btn btn-default btn-danger " data-ingredient="cheese" data-type="remove">
             <p class="d-inline-block mr-5 ml-5" > Cheese </p>
-            <input type="button" value="+" class="btn btn-default btn-success" id="cheeseAdder">
+            <input type="button" value="+" class="btn btn-default btn-success" data-ingredient="cheese" data-type="add">
         </form>
         <form class="col-12">
-            <input type="button" value="-" class="btn btn-default btn-danger " id="meatRemover">
+            <input type="button" value="-" class="btn btn-default btn-danger " data-ingredient="meat" data-type="remove">
             <p class="d-inline-block mr-5 ml-5" > Meat </p>
-            <input type="button" value="+" class="btn btn-default btn-success" id="meatAdder">
+            <input type="button" value="+" class="btn btn-default btn-success" data-ingredient="meat" data-type="add">
         </form>
         <form class="col-12">
-            <input type="button" value="-" class="btn btn-default btn-danger " id="saladRemover">
+            <input type="button" value="-" class="btn btn-default btn-danger " data-ingredient="salad" data-type="remove">
             <p class="d-inline-block mr-5 ml-5" > Salad </p>
-            <input type="button" value="+" class="btn btn-default btn-success" id="saladAdder">
+            <input type="button" value="+" class="btn btn-default btn-success" data-ingredient="salad" data-type="add">
         </form>
         <form class="col-12">
-            <input type="button" value="-" class="btn btn-default btn-danger " id="tomatoRemover">
+            <input type="button" value="-" class="btn btn-default btn-danger " data-ingredient="tomato" data-type="remove">
             <p class="d-inline-block mr-5 ml-5" > Tomato </p>
-            <input type="button" value="+" class="btn btn-default btn-success" id="tomatoAdder">
+            <input type="button" value="+" class="btn btn-default btn-success" data-ingredient="tomato" data-type="add">
         </form>
     </div>
 </section>
 
-    <article class="countries">
+    <!--<article class="countries">
 
     <section class="french col-2 mb-5">
 
@@ -85,10 +85,10 @@
 
     </section>
 
-    </article>
+    </article>-->
 
 </main>
 
-<script src="script.js"></script>
+<script src="dist/main.js"></script>
 </body>
 </html>
