@@ -7,47 +7,30 @@ let lastel = document.querySelector('#lastel');
 let animIsWorking = false;
 
 //Add buttons
-let cheeseAdder = document.getElementById('cheeseAdder');
-let meatAdder = document.getElementById('meatAdder');
-let saladAdder = document.getElementById('saladAdder');
-let tomatoAdder = document.getElementById('tomatoAdder');
-
-// remove buttons
-let cheeseRemover = document.getElementById('cheeseRemover');
-let meatRemover = document.getElementById('meatRemover');
-let saladRemover = document.getElementById('saladRemover');
-let tomatoRemover = document.getElementById('tomatoRemover');
+// ingredientToggle(OBJECT)
+document.querySelectorAll('input[data-ingredient]').forEach(el => {console.log(el); el.addEventListener("click", function(){ingredientToggle(el.dataset)})});
 
 // number of cheeses
-let cheeseCount = 1;
-let cheeses = [];
+var cheeses = [];
 
 // number of meats
-let meatCount = 1;
-let meats = [];
+var meats = [];
 
 // number of salads
-let saladCount = 1;
-let salads = [];
+var salads = [];
 
 // number of tomatoes
-let tomatoCount = 1;
-let tomatoes = [];
+var tomatoes = [];
 
 
-//add functions
-cheeseAdder.onclick = function(){addElement(cheeses)};
-meatAdder.onclick = function(){addElement(meats)};
-saladAdder.onclick = function(){addElement(salads)};
-tomatoAdder.onclick = function(){addElement(tomatoes)};
-
-
-// remove functions
-cheeseRemover.onclick = function(){removeElement('cheese')};
-meatRemover.onclick = function(){removeElement('meat')};
-saladRemover.onclick = function(){removeElement('salad')};
-tomatoRemover.onclick = function(){removeElement('tomato')};
-
+function ingredientToggle({ingredient,type }={}){
+    if(type === "add"){
+        console.log( 'Dodaje ' + ingredient);
+    }
+    else{
+        console.log('Odejmuje ' + ingredient);
+    }
+}
 
 // Function which add element
 function addElement(whatElement){
