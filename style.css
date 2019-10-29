@@ -128,38 +128,14 @@ form input[type="button"] {
   border-bottom-left-radius: 25px;
 }
 
-.cheese-small, .salad-small, .meat-small, .tomato-small {
-  width: 2%;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.cheese-small {
-  height: 6%;
-  background-color: yellow;
-}
-
-.salad-small {
-  height: 4%;
-  background-color: #119b15;
-}
-
-.meat-small {
-  height: 8%;
-  background-color: #914b61;
-}
-
-.tomato-small {
-  height: 5%;
-  background-color: #ff333a;
-}
-
 .cheese {
   width: 90%;
-  height: 6%;
+  height: 2vh;
   background-color: yellow;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-animation: show 0.5s ease-in-out;
+          animation: show 0.5s ease-in-out;
 }
 
 .salad {
@@ -256,5 +232,23 @@ form input[type="button"] {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@-webkit-keyframes show {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes show {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

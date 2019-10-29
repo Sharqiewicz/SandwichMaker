@@ -11,7 +11,8 @@ var animIsWorking = false;
 document.querySelectorAll('input[data-ingredient]').forEach(el => { el.addEventListener("click", function(){ingredientToggle(el.dataset)})});
 
 // Array of ingredients elements
-ingredientsArr = [];
+var ingredientsArr = [];
+var ingredientsArrBackup = [];
 
 function ingredientToggle({ ingredient, type }={}){
 
@@ -19,8 +20,14 @@ function ingredientToggle({ ingredient, type }={}){
     if(type === "add"){
         if(!animIsWorking){
             animIsWorking = true;
-            ingredientsArr.push(ingredient);
+
+            var tmp = document.createElement('div');
+            tmp.setAttribute('class', `${ingredient}`);
+            father.insertBefore(tmp, lastel);
+
+            ingredientsArr.push(tmp);
             console.log(ingredientsArr);
+
             animIsWorking = false;
         }
     }
