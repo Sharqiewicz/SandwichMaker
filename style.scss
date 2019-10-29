@@ -108,23 +108,23 @@ form input[type="button"]{
 
 .salad{
   width: 95%;
-  height: 4%;
+  height: 1vh;
   background-color: #119b15;
-  transition: 0.4s;
+  animation: show 0.5s ease-in-out;
 }
 
 .tomato{
   width: 70%;
-  height: 5%;
+  height: 2vh;
   background-color: #ff333a;
-  transition: 0.4s;
+  animation: show 0.5s ease-in-out;
 }
 
 .meat{
   width: 90%;
-  height: 8%;
+  height: 3vh;
   background-color: #914b61;
-  transition: 0.4s;
+  animation: show 0.5s ease-in-out;
 }
 
 .flague{
@@ -173,6 +173,6 @@ form input[type="button"]{
      width: 20%;
   }
   100%{
-    width: 80%;
+    width: 70%;
   }
 }
