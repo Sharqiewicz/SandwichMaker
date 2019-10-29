@@ -5,6 +5,12 @@ $font: 'Fredoka One', cursive;
 $blue: #224ae8;
 $red: #ff333a;
 
+$cheese-width: 90%;
+$salad-width: 90%;
+$meat-width: 80%;
+$tomato-width: 80%;
+
+
 
 .blue{background-color: $blue; width: 6vh; height:100%;}
 .white{background-color: $text; width: 6vh; height:100%;}
@@ -160,11 +166,13 @@ form input[type="button"]{
       }
  }
 
+ //make function with startanim ingredients
+
  @keyframes show{
-   0%{
-      width: 20%;
-   }
-   100%{
-     width: 80%;
-   }
- }
+  0%{
+     width: 20%;
+  }
+  100%{
+    width: 80%;
+  }
+}
