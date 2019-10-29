@@ -1,0 +1,178 @@
+$gray: #222;
+$text: #fff;
+$shadow: 0.1em 0.1em 0.2em black;
+$font: 'Fredoka One', cursive;
+$blue: #224ae8;
+$red: #ff333a;
+
+$cheese-width: 90%;
+$salad-width: 90%;
+$meat-width: 80%;
+$tomato-width: 80%;
+
+
+
+.blue{background-color: $blue; width: 6vh; height:100%;}
+.white{background-color: $text; width: 6vh; height:100%;}
+.red{background-color: $red; width: 6vh; height:100%;}
+
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: forestgreen;
+
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: sandybrown;
+}
+
+body{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: $gray;
+  color: $text;
+  text-shadow: $shadow;
+  font-family: $font;
+}
+
+p{
+  text-align: center;
+  width: 3vw;
+  height: 5vh;
+}
+
+form input[type="button"]{
+  width: 50px;
+  height: 50px;
+  margin: 30px 50px;
+}
+
+.sandwich{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border: 3px solid white;
+  border-radius: 25px;
+  width: 100%;
+  height: 50vh;
+}
+.sandwich *{
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+#sandwich-container{
+  width: 50%;
+  max-height:85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+#lastel{
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+#bread-up,#bread-down{
+  width: 50%;
+  height: 5vh;
+  background-color: sandybrown;
+}
+#bread-up{
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+#bread-down{
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.cheese{
+  width: 90%;
+  height: 2vh;
+  background-color: yellow;
+  transition: 0.4s;
+  animation: show 0.5s ease-in-out;
+}
+
+.salad{
+  width: 95%;
+  height: 1vh;
+  background-color: #119b15;
+  animation: show 0.5s ease-in-out;
+}
+
+.tomato{
+  width: 70%;
+  height: 2vh;
+  background-color: #ff333a;
+  animation: show 0.5s ease-in-out;
+}
+
+.meat{
+  width: 90%;
+  height: 3vh;
+  background-color: #914b61;
+  animation: show 0.5s ease-in-out;
+}
+
+.flague{
+  height: 15vh;
+  border: 3px solid white;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.french{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.countries{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+ .panel{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+      div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+ }
+
+ //make function with startanim ingredients
+
+ @keyframes show{
+  0%{
+     width: 20%;
+  }
+  100%{
+    width: 70%;
+  }
+}
