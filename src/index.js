@@ -4,7 +4,6 @@ var lastel = document.querySelector('#lastel');
 
 var animIsWorking = false;
 
-//Add buttons
 // ingredientToggle(OBJECT)
 document.querySelectorAll('input[data-ingredient]').forEach(el => { el.addEventListener("click", function(){ingredientToggle(el.dataset)})});
 
