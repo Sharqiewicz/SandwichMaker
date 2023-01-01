@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Sharqiewicz/SandwichMaker#readme",
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "webpack": "^5.75.0"
   }
 }
